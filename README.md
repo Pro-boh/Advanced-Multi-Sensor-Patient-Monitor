@@ -1,7 +1,7 @@
 # Development of an Advanced Patient Monitoring System for Measuring Waist Circumference, Body Fat, and Vital Signs
 
 <p align="center">
-  <img src="unnamed.jpg" alt="Advanced-Multi-Sensor-Patient-Monitor" width="100%">
+  <img src="product.jpg" alt="Advanced-Multi-Sensor-Patient-Monitor" width="100%">
 </p>
 
 This repository contains the development files for EVOLVE, an integrated patient monitoring system designed to measure key health metrics in a single, unified platform. The project combines hardware prototyping with software development to create a device capable of real-time monitoring of:
