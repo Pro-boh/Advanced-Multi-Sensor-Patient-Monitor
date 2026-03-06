@@ -1,25 +1,94 @@
-# Development of an Advanced Patient Monitoring System for Measuring Waist Circumference, Body Fat, and Vital Signs
+# EVOLVE – Integrated Patient Monitoring System
 
+**EVOLVE** is a prototype **integrated patient monitoring platform** designed to collect multiple health metrics through a single hardware–software ecosystem. The system combines **embedded electronics, biomedical sensors, and IoT communication** to provide real-time patient data for clinical observation and analysis.
+
+Developed as an undergraduate research project by students from the **Department of Physics & Electronics, University of Kelaniya**, EVOLVE explores how low-cost embedded systems can be used to build accessible healthcare monitoring solutions.
 <p align="center">
   <img src="product.jpg" alt="Advanced-Multi-Sensor-Patient-Monitor" width="100%">
 </p>
+---
 
-This repository contains the development files for EVOLVE, an integrated patient monitoring system designed to measure key health metrics in a single, unified platform. The project combines hardware prototyping with software development to create a device capable of real-time monitoring of:
+## Overview
 
-Body Composition: Waist Circumference and Body Fat Percentage.
+Traditional patient monitoring often requires multiple independent devices to measure different physiological parameters. **EVOLVE addresses this limitation by integrating several health measurements into one unified platform**, enabling continuous monitoring and simplified data collection.
 
-Vital Signs: Blood Pressure, Heart Rate (SpO2), Body Temperature, ECG, and Respiratory Rate.
+The system is built around an **ESP32 microcontroller**, which interfaces with multiple biomedical sensors to capture and process physiological signals. These signals are then prepared for **IoT transmission**, allowing remote monitoring, data logging, and further clinical analysis.
 
-The system utilizes an ESP32 microcontroller and various sensors (Pulse Sensor, AD8232 ECG Sensor, MAX30100, LM35, CNY70) to acquire data. The goal is to transmit this data for IoT integration and clinical analysis, providing healthcare professionals with comprehensive patient data to improve decision-making and personalized care.
+---
 
-This project was developed by undergraduates from the Department of Physics & Electronics, University of Kelaniya.
+## Health Metrics Monitored
 
-Key Features:
+EVOLVE is designed to monitor both **body composition indicators** and **vital signs**, providing a broader view of patient health.
 
-Modular sensor integration.
+### Body Composition
+- Waist Circumference
+- Body Fat Percentage
 
-Real-time data acquisition.
+### Vital Signs
+- Blood Pressure
+- Heart Rate
+- Blood Oxygen Saturation (SpO₂)
+- Body Temperature
+- Electrocardiogram (ECG)
+- Respiratory Rate
 
-IoT-enabled signal transmission.
+---
 
-Prototype design for clinical usability.
+## Hardware Architecture
+
+The system integrates multiple biomedical sensors connected to the ESP32 platform.
+
+| Component | Purpose |
+|-----------|--------|
+| **ESP32** | Main microcontroller for data acquisition and communication |
+| **Pulse Sensor** | Heart rate detection |
+| **AD8232 ECG Sensor** | ECG signal acquisition |
+| **MAX30100** | SpO₂ and pulse oximetry |
+| **LM35** | Body temperature measurement |
+| **CNY70** | Respiratory signal detection |
+
+---
+
+## Key Features
+
+- **Modular Sensor Integration**  
+  Easily expandable architecture that supports additional biomedical sensors.
+
+- **Real-Time Data Acquisition**  
+  Continuous measurement and processing of physiological signals.
+
+- **IoT-Enabled Communication**  
+  Sensor data can be transmitted to cloud platforms for monitoring and storage.
+
+- **Prototype-Oriented Design**  
+  Built to demonstrate practical clinical usability and embedded system integration.
+
+---
+
+## Project Objective
+
+The goal of EVOLVE is to demonstrate how **embedded systems and IoT technologies can be combined to create a cost-effective patient monitoring solution**. By consolidating multiple physiological measurements into a single device, the system aims to assist healthcare professionals with **more comprehensive patient data for better decision-making and personalized care**.
+
+---
+
+## Authors
+
+Developed by
+- **P.D.J.P.D. PATHIRANA**
+- **K.G.K. GUNASEKARA**
+- **E.G.Y. HANSAMALI**
+- **H.B.J.C. WICKRAMARACHCHI**
+- **H.T. HETTIARACHCHI**
+
+---
+  **Undergraduate Eectronics Researchers of**  
+**University of Kelaniya**
+
+---
+
+## Future Improvements
+
+- Mobile or web dashboard for live patient monitoring
+- Cloud database integration
+- Improved signal processing and filtering
+- Miniaturized hardware enclosure for clinical deployment
